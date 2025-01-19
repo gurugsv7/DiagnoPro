@@ -6,7 +6,7 @@ import { CaseDetailsPage } from './pages/CaseDetailsPage';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/DiagnoPro">  {/* Add this to correctly route for GitHub Pages */}
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/field/:fieldId" element={<FieldPage />} />

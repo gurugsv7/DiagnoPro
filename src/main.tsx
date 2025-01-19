@@ -3,7 +3,8 @@ import { createRoot } from 'react-dom/client';
 import App from './App.tsx';
 import './index.css';
 
-createRoot(document.getElementById('root')!).render(
+// Change 'root' to 'app' to match the id in index.html
+createRoot(document.getElementById('app')!).render(
   <StrictMode>
     <App />
   </StrictMode>

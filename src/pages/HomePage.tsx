@@ -53,7 +53,7 @@ export function HomePage() {
         <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6 text-center">
           Explore Medical Specialties
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8"> {/* Increased gap */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {medicalFields.map((field) => {
             const IconComponent = icons[field.icon as keyof typeof icons];
 
@@ -93,9 +93,9 @@ export function HomePage() {
       </div>
 
       {/* About Me Section with Blue Background */}
-      <div className="py-12 bg-blue-50">
+      <div className="py-6 bg-blue-50"> {/* Reduced padding */}
         <div className="max-w-7xl mx-auto px-4 sm:px-6 text-center">
-          <h2 className="text-2xl sm:text-3xl font-bold text-gray-800 mb-4 sm:mb-6">About Me</h2> {/* Reduced font size */}
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-800 mb-4">About Me</h2> {/* Reduced margin */}
           <p className="text-sm sm:text-base text-gray-600">
             I created DiagnoPro to help medical students and professionals enhance their clinical expertise through interactive case studies and real-world scenarios. This platform aims to provide a fun and engaging way to practice diagnoses and expand your knowledge in various medical fields.
           </p>
@@ -103,9 +103,9 @@ export function HomePage() {
       </div>
 
       {/* Vision Section with Blue Background */}
-      <div className="py-12 bg-blue-50">
+      <div className="py-6 bg-blue-50"> {/* Reduced padding */}
         <div className="max-w-7xl mx-auto px-4 sm:px-6 text-center">
-          <h2 className="text-2xl sm:text-3xl font-bold text-gray-800 mb-4 sm:mb-6">Vision</h2> {/* Reduced font size */}
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-800 mb-4">Vision</h2> {/* Reduced margin */}
           <p className="text-sm sm:text-base text-gray-600">
             My vision is to create a platform that empowers medical students and professionals to practice, learn, and grow by providing access to interactive, real-life case studies and scenarios. I believe that continuous learning and hands-on practice are key to improving clinical skills and making a positive impact in healthcare.
           </p>
@@ -113,9 +113,9 @@ export function HomePage() {
       </div>
 
       {/* Features Section with Blue Background */}
-      <div className="py-12 bg-blue-50">
+      <div className="py-6 bg-blue-50"> {/* Reduced padding */}
         <div className="max-w-7xl mx-auto px-4 sm:px-6 text-center">
-          <h2 className="text-2xl sm:text-3xl font-bold text-gray-800 mb-4 sm:mb-6">Features</h2> {/* Reduced font size */}
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-800 mb-4">Features</h2> {/* Reduced margin */}
           <p className="text-sm sm:text-base text-gray-600">
             DiagnoPro provides various interactive features, including case study simulations, feedback, and progress tracking to help users enhance their medical knowledge. Whether you are a student or a professional, DiagnoPro offers a unique way to improve your diagnosis skills.
           </p>
@@ -123,17 +123,17 @@ export function HomePage() {
       </div>
 
       {/* Contact Section with Blue Background */}
-      <div className="py-12 bg-blue-50">
+      <div className="py-6 bg-blue-50"> {/* Reduced padding */}
         <div className="max-w-7xl mx-auto px-4 sm:px-6 text-center">
-          <h2 className="text-2xl sm:text-3xl font-bold text-gray-800 mb-4 sm:mb-6">Contact</h2> {/* Reduced font size */}
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-800 mb-4">Contact</h2> {/* Reduced margin */}
           <p className="text-sm sm:text-base text-gray-600">
-            If you have any questions, suggestions, or just want to connect, feel free to reach out! You can contact me at <a href="mailto:example@email.com" className="text-blue-600">example@email.com</a>.
+            If you have any questions, suggestions, or just want to connect, feel free to reach out! You can contact me at <a href="mailto:gurugsv777@gmail.com" className="text-blue-600">gurugsv777@gmail.com</a>.
           </p>
         </div>
       </div>
 
       {/* Buy Me a Coffee Section */}
-      <div className="py-12 bg-gray-50 text-center">
+      <div className="py-6 bg-gray-50 text-center">
         <a
           href="https://www.buymeacoffee.com/yourusername" // Replace with your Buy Me a Coffee link
           target="_blank"

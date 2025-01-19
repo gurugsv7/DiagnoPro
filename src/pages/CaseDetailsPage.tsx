@@ -35,26 +35,26 @@ export function CaseDetailsPage() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50 pb-12">
+    <div className="min-h-screen bg-gray-50 pb-6">
       <div className="bg-white shadow-sm">
-        <div className="max-w-7xl mx-auto px-4 py-4 flex items-center">
+        <div className="max-w-7xl mx-auto px-4 py-2 flex items-center"> {/* Reduced padding */}
           <button
             onClick={() => navigate(-1)} // Only navigates back when the user clicks this button
             className="mr-4 p-2 hover:bg-gray-100 rounded-full transition-colors"
           >
-            <ArrowLeft className="w-6 h-6" />
+            <ArrowLeft className="w-5 h-5" />
           </button>
-          <h1 className="text-2xl font-semibold text-gray-900">{caseData.title}</h1>
+          <h1 className="text-xl sm:text-2xl font-semibold text-gray-900 truncate">{caseData.title}</h1> {/* Reduced font size */}
         </div>
       </div>
 
       <div className="max-w-4xl mx-auto px-4 py-6 space-y-4">
         <div className="bg-white rounded-xl shadow-sm p-4">
-          <div className="flex items-center gap-3 mb-4">
+          <div className="flex items-center gap-3 mb-3">
             <User className="w-6 h-6 text-blue-600" />
             <h2 className="text-lg font-semibold">Patient Information</h2>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
             <div className="space-y-2">
               <p className="text-gray-600">
                 Age: <span className="font-medium text-gray-900">{caseData.age} years</span>
@@ -71,7 +71,7 @@ export function CaseDetailsPage() {
         </div>
 
         <div className="bg-white rounded-xl shadow-sm p-4">
-          <div className="flex items-center gap-3 mb-4">
+          <div className="flex items-center gap-3 mb-3">
             <ClipboardList className="w-6 h-6 text-blue-600" />
             <h2 className="text-lg font-semibold">Symptoms</h2>
           </div>
@@ -83,7 +83,7 @@ export function CaseDetailsPage() {
         </div>
 
         <div className="bg-white rounded-xl shadow-sm p-4">
-          <div className="flex items-center gap-3 mb-4">
+          <div className="flex items-center gap-3 mb-3">
             <Stethoscope className="w-6 h-6 text-blue-600" />
             <h2 className="text-lg font-semibold">Your Diagnosis</h2>
           </div>
@@ -117,3 +117,4 @@ export function CaseDetailsPage() {
     </div>
   );
 }
+

@@ -20,7 +20,12 @@ export function CaseDetailsPage() {
   }
 
   const handleSubmit = () => {
-    const isCorrect = diagnosis.toLowerCase() === caseData.correctDiagnosis.toLowerCase();
+    // Normalize both user input and the correct answer
+    const normalizeInput = (input) => input.trim().replace(/\s+/g, ' ');
+    const normalizedDiagnosis = normalizeInput(diagnosis.toLowerCase());
+    const normalizedCorrectDiagnosis = normalizeInput(caseData.correctDiagnosis.toLowerCase());
+
+    const isCorrect = normalizedDiagnosis === normalizedCorrectDiagnosis;
 
     // Set feedback message
     setFeedback({
@@ -31,7 +36,7 @@ export function CaseDetailsPage() {
     });
 
     // Mark case as completed
-    updateCaseStatus(caseData.id, 'completed'); // Update the case's status to 'completed'
+    updateCaseStatus(caseData.id, 'completed');
   };
 
   return (
@@ -117,4 +122,3 @@ export function CaseDetailsPage() {
     </div>
   );
 }
-
